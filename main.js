@@ -61,7 +61,7 @@ window.onload = function() {
 
     // Load the card images
     cardBackImage = new Image();
-    cardBackImage.src = "./assets/cardback.png";
+    cardBackImage.src = "./cardback.png";
 
     cardBackImage.onload = function() {
         loadCardFrontImages(() => {
@@ -71,8 +71,8 @@ window.onload = function() {
     };
 
     // Load the sounds
-    const matchSound = new Audio('./assets/card-FindingPair-Efx.mp3'); // Replace with your path
-    const gameOverSound = new Audio('./assets/card-GameOver-Efx.mp3'); // Replace with your path
+    const matchSound = new Audio('./card-FindingPair-Efx.mp3'); // Replace with your path
+    const gameOverSound = new Audio('./card-GameOver-Efx.mp3'); // Replace with your path
 
     // Add click event listener
     board.addEventListener('click', function(event) {

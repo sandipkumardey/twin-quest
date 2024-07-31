@@ -41,7 +41,7 @@ function loadCardFrontImages(callback) {
     let loadedImages = 0;
     for (let i = 1; i <= numPairs; i++) {
         const img = new Image();
-        img.src = `./assets/card${i}.png`;
+        img.src = `./card${i}.png`;
         img.onload = function() {
             loadedImages++;
             cardFrontImages.push(img);
